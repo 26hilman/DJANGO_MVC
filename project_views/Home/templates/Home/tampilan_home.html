@@ -1,0 +1,220 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <script src="{% static 'js/jquey-3.3.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+                    <h5 class="my-0 mr-md-auto font-weight-normal">Alpha Tech Academy</h5>
+                    <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-dark" href="{% url 'home' %}">Home</a>
+                    <a class="p-2 text-dark" href="{% url 'blog' %}">Blog</a>
+                    <a class="p-2 text-dark" href="{% url 'mentor' %}">Mentor</a>
+                    <a class="p-2 text-dark" href="{% url 'mentee' %}">Mentee</a>
+                    <a class="p-2 text-dark" href="{% url 'author' %}">Author</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center des-header">
+                        <img src="{% static 'images/alpha-logo.png' %}" alt=""><br>
+                        <h1>Alpha Tech Academy</h1>
+                        <small>Alpha Tech academy is a tech talent incubator that give everyone
+                            (even non IT background) a chance to be a professional Tech Talent within 3 months.
+                            Contact Person : Email : academy@alphatech.id Mobile Phone : 0877 9609 9530
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="section-row">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img src="{% static 'images/benefit.png' %}" alt="">
+                </div>
+                <div class="col-md-8 col-sm-6 col-12">
+                    <h5>Learn awesome tech</h5><br>
+                    <small>You will learn about programming language, 
+                        such as Python and Javascript, build back-end 
+                        apps using Flask framework with microservice concept, 
+                        build client-site apps using React Library, etc.</small>
+                </div>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img src="{% static 'images/search-job.png' %}" alt="">
+                </div>
+                <div class="col-md-8 col-sm-6 col-12">
+                    <h5>Land new job</h5><br>
+                    <small>If you can pass this awesome program, 
+                        you will be part of our reliable tech team 
+                        for especially Software Engineer position and 
+                        other tech position such as Quality Engineer, 
+                        System Analyst, etc.</small>
+                </div>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img src="{% static 'images/get-paid.png' %}" alt="">
+                </div>
+                <div class="col-md-8 col-sm-6 col-12">
+                    <h5>Get paid to learn</h5><br>
+                    <small>Join for free and earn some money. 
+                        Yes you read that right, no registration 
+                        fee required to enter this program. To make 
+                        things even better, you will receive pocket 
+                        money just for participating. Cool, right?</small>
+                </div>
+            </div>
+        </div>
+        <div class="section-row">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <img src="{% static 'images/mission.png' %}" alt="">
+                </div>
+                <div class="col-md-8 col-sm-6 col-12">
+                    <h3>Who are we ?</h3><br>
+                    <small>Alpha Tech Academy is a tech talent 
+                        incubation that gives anyone any chance 
+                        (not even an IT background) to learn within 
+                        3 months of being a professional Tech Talent. 
+                        What is our mission? We want to improve capability 
+                        Tech Talent in Indonesia</small><br><br>
+                    <h3>What is our mission ?</h3>
+                    <small>We want to improve capability Tech Talent in Indonesia</small>
+                </div>
+            </div>
+        </div>
+        <div class="bagian-learn">
+            <div class="container-fluid">
+                <h3 class="title-section text-center">What will you learn?</h3>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="kotak-learn">
+                            <div class="box-tengah">
+                                <div class="learn-img">
+                                    <div class="learn-img-middle">
+                                        <img src="{% static 'images/learn-html.png' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-programming.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-git.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-api.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-react.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-tdd.png' %}" alt="" width="110px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-server.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="kotak-learn">
+                                <div class="box-tengah">
+                                    <div class="learn-img">
+                                        <div class="learn-img-middle">
+                                            <img src="{% static 'images/learn-scrum.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 footer1 text-center">
+                        <span>Our Products : </span>
+                        <img src="{% static 'images/logo-grey-alphapay.png' %}" alt="">
+                        <img src="{% static 'images/logo-grey-sepulsa.png' %}" alt="">
+                        <img src="{% static 'images/logo-grey-alphabill.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 footer2 text-center">
+                        <span>Contact Person : Mobile Phone : 0877 9609 9530. Email : academy@alphatech.id </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
