@@ -17,3 +17,7 @@ def input_post(request):
     else :
         form = BlogForm()
     return render(request, 'Blog/blog_form.html', {'form' : form})
+
+def blog_detail(request, blog_id):
+    blogging = Blog.objects.get(pk=blog_id)
+    return render(request, 'Blog/blog_detail.html', {'blogging' : blogging})
