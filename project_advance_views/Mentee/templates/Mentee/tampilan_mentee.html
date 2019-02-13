@@ -1,0 +1,27 @@
+{% extends 'Home/base_headfoot.html' %}
+{% load static %}
+
+
+{% block content %}
+        <div class="container-fluid">
+            <div class="section-row">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h3 class="title-section text-center">Our Mentee</h3>
+                    </div>
+                </div>
+            </div>
+            {% for data in mentees %}
+            <div class="section-row">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <img class="pict-size" src="{{ data.gambar.url }}" alt="">
+                    </div>
+                    <div class="col-md-8 col-sm-6 col-12">
+                        <h5>{{ data.nama }}</h5>
+                        <small>{{ data.note }}</small>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}

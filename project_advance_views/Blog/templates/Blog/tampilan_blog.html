@@ -1,0 +1,25 @@
+{% extends 'Home/base_headfoot.html' %}
+{% load static %}
+
+{% block content %}
+        {% for data in blogs %}
+        <div class="container-fluid">
+            <div class="row margin-top">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="{{ data.gambar.url }}" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+            <div class="row margin-top">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h3>{{ data.judul }}</h3>
+                    <p>{{ data.isi }}</p>
+                    <a href=" ">Baca Selengkapnya</a>
+                    <div class="margin-bawah"></div>
+                </div>             
+            </div>
+        </div>
+        {% endfor %}
+{% endblock %}
